@@ -40,8 +40,8 @@ Follow these steps to set up Meal Muse locally:
 
 1. Clone the frontend repository:
    ```bash
-   git clone https://github.com/your-username/meal-muse-frontend.git
-   cd meal-muse-frontend
+   git clone https://github.com/SaiHarika16/MealMuse
+   cd meal
    ```
 2. Install dependencies:
    ```bash
@@ -57,7 +57,7 @@ Follow these steps to set up Meal Muse locally:
 1. Clone the backend repository:
    ```bash
    git clone https://github.com/your-username/meal-muse-backend.git
-   cd meal-muse-backend
+   cd muse
    ```
 2. Install dependencies:
    ```bash
@@ -107,18 +107,6 @@ meal-muse-backend/
 |-- config/
 |-- package.json
 ```
-
-## Screenshots
-
-### Landing Page
-![Landing Page](https://via.placeholder.com/800x400 "Hero Section")
-
-### Recipe Details
-![Recipe Details](https://via.placeholder.com/800x400 "Recipe Details")
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x400 "Dashboard")
-
 ## Contribution Guidelines
 
 We welcome contributions to enhance Meal Muse. To contribute:
@@ -147,8 +135,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 For inquiries or support, contact:
 
 - **Sai Harika**
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- GitHub: [https://github.com/your-username](https://github.com/your-username)
+- Email: [saiharika2005@gmail.com](mailto:your-email@example.com)
+- GitHub: [https://github.com/SaiHarika16](https://github.com/your-username)
 
 ---
 
