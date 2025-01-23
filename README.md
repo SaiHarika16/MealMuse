@@ -1,143 +1,134 @@
-# Meal Muse
+# MealMuse: A Personalized Recipe Recommendation System
 
-Meal Muse is a comprehensive recipe recommendation platform designed to revolutionize meal planning. By leveraging data-driven techniques and the MERN stack (MongoDB, Express, React, Node.js), Meal Muse provides users with tailored meal suggestions based on their unique preferences, dietary needs, and available ingredients. This project aims to simplify meal planning, promote healthier eating habits, and empower individuals to make informed dietary decisions.
+MealMuse revolutionizes meal planning with a dynamic, personalized approach to nutrition and culinary discovery. By leveraging state-of-the-art technologies, MealMuse offers tailored meal recommendations that align with users' dietary preferences, health goals, and nutritional requirements.
 
 ## Features
 
-- **Personalized Recipe Recommendations**: Tailored meal suggestions based on time, calories, ingredients, and nutritional goals.
-- **Dynamic Recipe Filters**:
-  - Time-based meal preparation options.
-  - Calorie-based recipes for mindful eating.
-  - Ingredient-based suggestions for resource efficiency.
-  - Nutrition-based recommendations for health-conscious choices.
-- **Detailed Recipe Page**:
-  - Key details: preparation time, servings, calories.
-  - Step-by-step cooking instructions.
-  - Nutritional breakdown.
-  - Options to save favorites, share, and print.
-- **Interactive Dashboard**: Manage profile, view favorites, and personalize preferences.
-- **Advanced Search and Explore**: Effortlessly find recipes by name or category with pagination for smooth navigation.
-- **User Authentication**: Secure account creation and login.
-- **Quiz Feature**: Personalized recommendations based on user responses to dietary and health-related questions.
+- **Personalized Recipe Recommendations**: Tailored suggestions based on dietary preferences, ingredient availability, health goals, and more.
+- **Advanced Filters**: Search and sort recipes by time, calories, ingredients, or nutritional content.
+- **Nutritional Analysis**: Detailed breakdown of essential nutrients for informed meal planning.
+- **Real-Time Interactions**: Dynamic search and live updates enhance user engagement.
+- **User Profiles**: Secure authentication and personalized dashboards for tracking favorites and preferences.
+- **Interactive Quiz**: Collects user data for hyper-personalized recommendations.
 
 ## Tech Stack
 
-- **Frontend**: React
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JSON Web Tokens (JWT)
+MealMuse is built using the MERN stack, ensuring scalability, efficiency, and responsiveness.
+
+### Frontend
+- **React.js**: For building dynamic, responsive user interfaces.
+- **Redux**: For seamless state management.
+- **Bootstrap**: For a mobile-friendly and intuitive design.
+
+### Backend
+- **Node.js**: For handling server-side logic and asynchronous operations.
+- **Express.js**: For building a modular and efficient RESTful API.
+
+### Database
+- **MongoDB**: A NoSQL database for flexible and efficient data storage.
+
+### Additional Tools
+- **JSON Web Tokens (JWT)**: For secure user authentication.
+- **Caching and Optimization**: To handle high traffic with fast response times.
 
 ## Installation
 
-Follow these steps to set up Meal Muse locally:
+Follow these steps to set up and run MealMuse on your local machine:
 
 ### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- A package manager like npm or yarn
 
-1. Ensure **Node.js** and **npm** are installed.
-2. Install **MongoDB** and ensure it is running.
-
-### Frontend Setup
-
-1. Clone the frontend repository:
-   ```bash
-   git clone https://github.com/SaiHarika16/MealMuse
-   cd meal
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-### Backend Setup
-
-1. Clone the backend repository:
-   ```bash
-   git clone https://github.com/your-username/meal-muse-backend.git
-   cd muse
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file in the root directory with the following variables:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
-4. Start the backend server:
-   ```bash
-   npm start
-   ```
-
-### Connecting Frontend and Backend
-
-1. Ensure the frontend is running at `http://localhost:3000`.
-2. Ensure the backend is running at `http://localhost:5000`.
-3. Update the API base URL in the frontend code to match the backend server’s URL.
-
-### Testing
-
-1. Open your browser and navigate to `http://localhost:3000` to access the Meal Muse platform.
-2. Register or log in to explore the personalized features.
-
-## Project Structure
-
-### Frontend
-```
-meal-muse-frontend/
-|-- src/
-|   |-- components/
-|   |-- pages/
-|   |-- services/
-|-- public/
-|-- package.json
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/MealMuse.git
+cd MealMuse
 ```
 
-### Backend
+### Install Dependencies
+#### Frontend
+```bash
+cd meal
+npm install
 ```
-meal-muse-backend/
-|-- models/
-|-- routes/
-|-- controllers/
-|-- middlewares/
-|-- config/
-|-- package.json
+#### Backend
+```bash
+cd muse
+npm install
 ```
-## Contribution Guidelines
 
-We welcome contributions to enhance Meal Muse. To contribute:
+### Set Up Environment Variables
+Create a `.env` file in the backend (`muse`) directory with the following details:
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
+### Run the Application
+#### Start Backend Server
+```bash
+cd muse
+npm start
+```
+#### Start Frontend Server
+```bash
+cd meal
+npm start
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Dataset
+MealMuse utilizes the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets) sourced from Kaggle. The dataset includes over 500,000 recipes and 1.4 million reviews, enabling a robust recommendation system.
+
+### Preprocessing Steps
+1. **Column Selection**: Removed redundant columns.
+2. **Null Handling**: Imputed missing values with median and mean methods.
+3. **Feature Engineering**: Added dietary categories, ingredient counts, and weighted ratings.
+
+For detailed preprocessing, refer to the documentation in the project repository.
+
+## Project Highlights
+
+- **Landing Page**: Engaging hero section and curated recipe displays.
+- **Categories Page**: Time, calorie, and ingredient-based recipe filters.
+- **Recipe Page**: Detailed recipe insights, nutrient profiles, and step-by-step instructions.
+- **Explore Section**: Dynamic search and pagination for efficient browsing.
+- **User Dashboard**: Personalized profile management with favorite recipes.
+
+## Testing
+
+- **Component Validation**: Ensured individual components function as expected.
+- **End-to-End Testing**: Verified seamless integration across all system features.
+- **Performance Monitoring**: Optimized for high traffic and concurrent interactions.
+
+## Roadmap
+
+Future enhancements include:
+- Seasonal recipe recommendations.
+- AI-driven meal planning.
+- Real-time nutritional tracking.
+
+## Contributing
+We welcome contributions to improve MealMuse. Please follow these steps:
 1. Fork the repository.
-2. Create a new branch for your feature/fix:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
+2. Create a new branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add feature-name'`.
+4. Push to the branch: `git push origin feature-name`.
 5. Open a pull request.
 
 ## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Acknowledgments
+- The creators of the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets).
+- Open-source contributors and the MERN community.
 
 ## Contact
+For any queries, feel free to reach out:
+- Email: your.email@example.com
+- GitHub: [yourusername](https://github.com/yourusername)
 
-For inquiries or support, contact:
-
-- **Sai Harika**
-- Email: [saiharika2005@gmail.com](mailto:your-email@example.com)
-- GitHub: [https://github.com/SaiHarika16](https://github.com/your-username)
-
----
-
-Meal Muse is a labor of love, combining technology and culinary art to simplify meal planning. Explore, experiment, and enjoy a healthier lifestyle with Meal Muse!
