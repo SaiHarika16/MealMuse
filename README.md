@@ -43,7 +43,7 @@ Ensure you have the following installed:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/MealMuse.git
+git clone https://github.com/SaiHarika16/MealMuse
 cd MealMuse
 ```
 
@@ -82,7 +82,7 @@ npm start
 The application will be available at `http://localhost:3000`.
 
 ## Dataset
-MealMuse utilizes the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets) sourced from Kaggle. The dataset includes over 500,000 recipes and 1.4 million reviews, enabling a robust recommendation system.
+MealMuse utilizes the [Food.com Recipes and Reviews dataset](: https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews) sourced from Kaggle. The dataset includes over 500,000 recipes and 1.4 million reviews, enabling a robust recommendation system.
 
 ### Preprocessing Steps
 1. **Column Selection**: Removed redundant columns.
@@ -120,15 +120,12 @@ We welcome contributions to improve MealMuse. Please follow these steps:
 4. Push to the branch: `git push origin feature-name`.
 5. Open a pull request.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
 ## Acknowledgments
 - The creators of the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets).
 - Open-source contributors and the MERN community.
 
 ## Contact
 For any queries, feel free to reach out:
-- Email: your.email@example.com
-- GitHub: [yourusername](https://github.com/yourusername)
+- Email: saiharika2005@gmail.com
+- GitHub: [SaiHarika16](https://github.com/SaiHarika16)
 
