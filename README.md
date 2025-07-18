@@ -71,7 +71,7 @@ JWT_SECRET=your_secret_key
 #### Start Backend Server
 ```bash
 cd muse
-npm start
+node server.js
 ```
 #### Start Frontend Server
 ```bash
